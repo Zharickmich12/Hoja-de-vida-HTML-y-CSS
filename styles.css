@@ -7,28 +7,29 @@ body {
 
 .container {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     max-width: 800px;
     margin: 50px auto;
 }
 
 .left-column {
-    width: 30%;
+    flex: 0 0 30%;
     background-color: #272829;
     padding: 20px;
 }
 
-.profile img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
 .right-column {
-    width: 70%;
+    flex: 0 0 65%; 
     background-color: #D8D9DA;
     padding: 20px;
+}
+
+.profile img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .main h1{
@@ -46,7 +47,7 @@ body {
 .professional-profile h2{
     font-size: 20px;
     margin-bottom: 20px;
-    margin: 10px;
+    margin: 2px;
     background-color: #61677A;
     color: #FFFFFF;
     padding: 5px 10px;
@@ -55,14 +56,14 @@ body {
 }
 
 .profile-description{
-    font-size: 15px;
+    font-size: 18px;
     text-align: justify;
 }
   
 .education-section h2 {
     font-size: 20px;
     margin-bottom: 20px;
-    margin: 10px;
+    margin: 2px;
     background-color: #61677A;
     color: #FFFFFF;
     padding: 5px 10px;
@@ -79,19 +80,30 @@ body {
   li {
     display: flex;
     align-items: left;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
   .year {
-    min-width: 80px;
-    text-align: left;
-    margin: 10px;
-    color: #555;
+    min-width: 100px;
+    text-align: center;
+    margin: 35px;
+    margin-left: 2px;
+    border: 2px solid #61677A;
+    padding: 2px;
+    border-radius: 5px;
+    display: inline-block;
+    line-height: 3;
   }
   
   .education-title {
     font-size: 18px;
     color: #000;
+    margin-top: 25px;
+  }
+
+  .institution-name{
+    font-size: 15px;
+    margin-top: 5px;
   }
 
 .skills-section {

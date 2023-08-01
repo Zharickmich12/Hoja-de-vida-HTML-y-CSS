@@ -1,114 +1,172 @@
-body{
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #93827F;
 }
 
-.name{
-    width: 100%;
-    height: 300px;
-    background-color: #2F2F2F;
-    transform: skewY(-5deg);
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 50px auto;
 }
 
-.name .img{
-    position: absolute;
-    top: 20%;
-    right: 5%;
-    width: 180px;
-    height: 180px;
-    border-radius: 100%;
-    transform: skewY(5deg);
-    overflow: hidden;
-}
-
-.name .content{
-    width: 50%;
-    height: 50%;
-    position: absolute;
-    left: 25%;
-}
-
-.name .content .p1{
-    color: white;
-    font-family: 'Ysabeau', sans-serif;
-    font-weight: bold;
-    font-size: 65px;
-    transform: skewY(5deg);
-    margin-bottom: 0; 
-}
-
-.name .content .p2{
-    color: white;
-    font-family: 'Ysabeau', sans-serif;
-    font-size: 35px;
-    transform: skewY(5deg);
-    margin-top: 0; 
-    margin-bottom: 0; 
-}
-
-.info{
-    width: 90%;
-    height: auto;
-    background-color: #2F2F2F;
-    margin: 5% auto;
+.left-column {
+    width: 30%;
+    background-color: #272829;
     padding: 20px;
-    border-radius: 20px;
 }
 
-.info .title{
-    color: white;
-    font-family: 'Ysabeau', sans-serif;
-    font-size: xx-large;
+.profile img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.right-column {
+    width: 70%;
+    background-color: #D8D9DA;
+    padding: 20px;
+}
+
+.main h1{
+    font-size: 48px;
+    margin-bottom: 10px;
     text-align: center;
-    font-weight: bold;
-    border-bottom: 2px white dashed;
 }
 
-.info .subtitle{
-    color: white;
-    font-family: 'Ysabeau', sans-serif;
-    font-weight: bold;
-    font-size: large;
-    display: inline-block;
-    margin-right: 20px;
+.main p{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.info .text{
-    color: white;
-    font-family: 'Ysabeau', sans-serif;
-    font-weight: normal;
-    font-size: large;
-    display: inline-block;
-}
-.info span{
-    display: inline-block;
-    width: auto;
-    height: auto;
-    padding-left: 1%;
-    padding-right: 1%;
-    background-color: #93827F;
-    color: white;
-    font-family: 'Ysabeau', sans-serif;
-    border-radius: 5px;
-}
-
-.form{
-    width: 90%;
-    height: auto;
-    background-color: #2F2F2F;
-    margin: 5% auto;
-    padding: 20px;
+.professional-profile h2{
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin: 10px;
+    background-color: #61677A;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    text-align: center;  
     border-radius: 20px;
 }
 
-.form span{
-    display: inline-block;
-    width: auto;
-    height: auto;
-    padding-left: 1%;
-    padding-right: 1%;
-    background-color: #93827F;
-    color: white;
-    font-family: 'Ysabeau', sans-serif;
+.profile-description{
+    font-size: 15px;
+    text-align: justify;
 }
+  
+.education-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin: 10px;
+    background-color: #61677A;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    text-align: center;  
+    border-radius: 20px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+  }
+  
+  .year {
+    min-width: 80px;
+    text-align: left;
+    margin: 10px;
+    color: #555;
+  }
+  
+  .education-title {
+    font-size: 18px;
+    color: #000;
+  }
+
+.skills-section {
+    padding: 15px;
+    color: #FFFFFF;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin: 10px;
+    background-color: #D8D9DA;
+    color: #272829;
+    padding: 5px 10px; 
+    border-radius: 20px;
+}
+  
+.skill {
+    margin-bottom: 10px;
+}
+  
+.skill p {
+    margin: 0;
+    color: #FFFFFF;
+}
+  
+.progress-bar {
+    background-color: #61677A; 
+    height: 10px; 
+}
+
+.contact-section {
+    padding: 20px;
+    color: #FFFFFF;
+  }
+  
+.contact-section h2 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin: 10px;
+    background-color: #D8D9DA;
+    color: #272829;
+    padding: 5px 10px; 
+    border-radius: 20px;
+  }
+  
+.contact-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+.contact-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+.contact-list i {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+.contact-list span {
+    font-size: 16px;
+  }
+
+a {
+    color: #fff;
+    text-decoration: none;  
+  }
+  
+a:hover {
+    text-decoration: underline;
+  }
+  

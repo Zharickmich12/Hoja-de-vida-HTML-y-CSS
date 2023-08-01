@@ -1,95 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de vida</title>
-    <link href="styles.css" rel="stylesheet" type="text/css"/>
+    <title>Mi hoja de vida</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <div class="name">
-        <div class="img">
-            <img src="https://media.licdn.com/dms/image/D4E03AQHqHpJGArTAwA/profile-displayphoto-shrink_200_200/0/1682116927847?e=1687392000&v=beta&t=glWxCNjZ15nsUkBtlr0Xqj4zsOTiLwIdyzenRCbFV4E" alt="image">
+    <div class="container">
+        <div class="left-column">
+            <div class="profile">
+                <img src="/Perfil.jpg" alt="Foto de Perfil">
+            </div>
+
+            <div class="contact-section">
+                <h2>Contacto</h2>
+                <ul class="contact-list">
+                    <li>
+                        <i class="bi bi-envelope"></i>
+                        <span>zharickfh12@gmail.com</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-telephone"></i>
+                        <span>(57) 3122590428</span>
+                    </li>
+                    <li>
+                        <i class="bi bi-linkedin"></i>
+                        <span><a href="https://www.linkedin.com/in/zharick-fetecua-9a947a281/" target="_blank">Linkedin</a></span>
+                    </li>
+                    <li>
+                        <i class="bi bi-github"></i>
+                        <span><a href="https://github.com/Zharickmich12" target="_blank">GitHub</a></span>
+                    </li>
+            </div>
+            
+            <div class="skills-section">
+                <h2>Habilidades</h2>
+                <div class="skill">
+                  <p>Git</p>
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="skill">
+                  <p>HTML</p>
+                  <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="skill">
+                    <p>CSS</p>
+                    <div class="progress-bar" style="width: 75%;"></div>
+                  </div>
+                  <div class="skill">
+                    <p>JavaScript</p>
+                    <div class="progress-bar" style="width: 75%;"></div>
+                  </div>
+                  <div class="skill">
+                    <p>Express</p>
+                    <div class="progress-bar" style="width: 70%;"></div>
+                  </div>
+                  <div class="skill">
+                    <p>MongoDB</p>
+                    <div class="progress-bar" style="width: 70%;"></div>
+                  </div>
+                  <div class="skill">
+                    <p>React</p>
+                    <div class="progress-bar" style="width: 75%;"></div>
+                  </div>
+                  <div class="skill">
+                    <p>Node.js</p>
+                    <div class="progress-bar" style="width: 65%;"></div>
+                  </div>
+            </div>
         </div>
-        <div class="content">
-            <p class="p1">Zharick Michelle</p>
-            <p class="p2">18 años, Desarrolladora web full stack</p>
+        
+        <div class="right-column">
+            <div class="main">
+                <h1>Zharick Michelle Fetecua Huertas</h1>
+                <p>Desarrolladora web full-stack</p>
+            </div>
+
+            <div class="professional-profile">
+                <h2>Perfil Profesional</h2>
+                <p class="profile-description">Desarrolladora web Full Stack MERN con un amplio conocimiento teórico y práctico de las tecnologías MERN (JavaScript, MongoDB, Express, React y Node.js) y constantemente actualizada sobre las últimas tendencias y mejores prácticas en desarrollo web. Capacitada para aprender rápido y para trabajar tanto en el desarrollo en favor del cliente como del servidor. Caracterizada por habilidades en resolución de problemas, colaboración en equipo y gestión del tiempo. Altamente motivada por formar parte de un entorno de trabajo dinámico para contribuir de manera significativa, aprender de profesionales experimentados y crecer como desarrolladora Full Stack MERN.</p>
+            </div>
+            
+            <div class="education-section">
+                <h2>Educación</h2>
+                <ul>
+                    <li>
+                        <div class="year">2021 - 2022</div>
+                        <div class="education-details">
+                            <div class="education-title">Técnico en asesoría comercial y operaciones de entidades financieras</div>
+                            <div class="institution-name">Servicio Nacional de Aprendizaje</p></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="year">2023</div>
+                        <div class="education-details">
+                            <div class="education-title">Desarrollo web full stack</div>
+                            <div class="institution-name">ADA School</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
-
-    <div class="info">
-        <p class="title">Datos personales</p>
-        <p class="subtitle">Nombres:</p>
-        <p class="text">Zharick Michelle</p><br>
-        <p class="subtitle">Apellidos:</p>
-        <p class="text">Fetecua Huertas</p><br>
-        <p class="subtitle">Teléfono:</p>
-        <p class="text">3122590428</p><br>
-        <p class="subtitle">Email:</p>
-        <p class="text"><a href="mailto:zharickfh12@gmail.com">zharickfh12@gmail.com</a></p><br>
-        <p class="subtitle">Ubicación actual:</p>
-        <p class="text">Mosquera, Cundinamarca</p>
-        <p class="subtitle">GitHub:</p>
-        <p class="text"><a href="https://github.com/Zharickmich12" target="_blank">GitHub</a></p><br>
-        <p class="subtitle">Linkedl:</p>
-        <p class="text"><a href="http://www.linkedin.com/in/zharick-michelle-fetecua-huertas-57b722210" target="_blank">Linkedl</a></p>
-    </div>
-    
-    <div class="info">
-        <p class="title">Perfil profesional</p>
-        <p class="text">Desarrolladora web innovadora, proactiva y con capacidad para desarrollar páginas web elegantes, con calidad y diseños de aplicaciones para clientes exigentes. Organizada y con capacidad de multitarea, habilidades de desarrollo web para una posición en una compañía moderna, abierta y profesional.</p>
-    </div>
-
-    <div class="info">
-        <p class="title">Formación académica</p>
-        <p class="subtitle">2015-2020:</p>
-        <p class="text">Bacillerato académico - Institución Educativa Liceo Lorens</p><br>
-        <p class="subtitle">2021-2022:</p>
-        <p class="text">Técnico en asesoría comercial y operaciones de entidades financieras - Servicio Nacional de Aprendizaje</p><br>
-        <p class="subtitle">2023:</p>
-        <p class="text">Desarrollo web full stack - ADA School</p><br>
-    </div>
-
-    <div class="info">
-        <p class="title">Habilidades técnicas</p>
-        <p class="subtitle">Repositorios Git</p>
-        <p class="text">Usar git como controlador de versiones, comandos de git, crear ramas y mezclarlas, crear y clonar repositorios.</p><br>
-        <p class="subtitle">HTML</p>
-        <p class="text">Semántica de HTML, usar HTML para crear un documento web, usar las etiquetas principales de HTML para añadir contenido al documento, crear páginas web con elementos multimedia.</p><br>
-        <p class="subtitle">CSS</p>
-        <p class="text">Aplicar CSS en documentos HTML, hacer Layouts usando Grid y Flexbox, consultas de medios.</p><br>
-        <p class="subtitle">JavaScript</p>
-        <p class="text">Crear código usando Javascript, imprimir variables en la consola, definir y ejecutar operaciones entre variables, usar arrays, funciones, representar objetos.</p>
-    </div>
-
-    <div class="info">
-        <p class="title">Intereses</p>
-        <span>Inteligencia Artificial</span>
-        <span>Gestión y diseño de páginas web corporativas</span>
-        <span>Diseño de video juegos</span>
-    </div>
-
-    <div class="form"> <center>
-        <form action="mailto:zharickfh12@gmail.com" method="post" enctype="text/plain">
-                <table class="tablas" width="50%"> 
-            <tr>
-                <td><span>Nombre</span></td> <td><input type="text" name="nombre" size="25" maxlength="50"></td>  
-            </tr> 
-            <tr>
-                <td><span>Apellido</span></td> <td><input type="text" name="apellido" size="25" maxlength="50"></td>  
-            </tr> 
-            <tr>
-                <td><span>Correo</span></td> <td><input type="text" name="correo" size="30" maxlength="100"></td> 
-            </tr>
-                <td><span>Mensaje</span></td> <td><textarea rows="8" name="mensaje"></textarea></td> 
-            </tr>
-        </table>
-        <p><input type="submit" name="contactar" value="Contactar"></p>
-    </form></center></div>
-
 </body>
 </html>
